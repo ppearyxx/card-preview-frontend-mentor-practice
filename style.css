@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", "Lexend Deca", Arial, sans-serif;
+  background: hsl(185, 75%, 39%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile Card */
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
+  max-width: 90vw;
+  text-align: center;
+  position: relative;
+}
+
+.profile-bg-image {
+  width: 100%;
+  display: block;
+  height: 140px;
+  object-fit: cover;
+}
+
+.profile-content {
+  padding: 0 2rem 2rem 2rem;
+  position: relative;
+  top: -50px;
+  background: transparent;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.profile-name-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-name {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.profile-age {
+  color: hsl(227, 10%, 46%);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.profile-city {
+  color: hsl(227, 10%, 46%);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats-area {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid hsl(227, 10%, 90%);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.stat {
+  flex: 1;
+}
+
+.stat-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.stat-title {
+  font-size: 0.8rem;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .profile-card {
+    width: 95vw;
+    padding: 0;
+  }
+  .profile-content {
+    padding: 0 1rem 1.5rem 1rem;
+  }
+}
